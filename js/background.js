@@ -1,20 +1,12 @@
-const images = [
-    "image01.png",
-    "image02.png",
-    "image03.png",
-    "image04.png",
-    "image05.png",
-    "image06.png",
-    "image07.png",
-    "image08.png",
-    "image09.png",
-    "image10.png"
-];
+const imageWidth = 1920;
+const imageHeight = 1080;
+const collectionID = 8342277;
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
-
-const bgImage = document.createElement("img");
-
-bgImage.src = `images/${chosenImage}`;
-
-document.body.appendChild(bgImage);
+fetch(`https://source.unsplash.com/collection/${collectionID}/${imageWidth}x${imageHeight}/`)
+    .then(response => {
+        const jsBody = document.querySelector('body');
+        jsBody.style = `background-image: url('${response.url}')`;
+    })
+    .catch(err => {
+        console.log(err);
+    });

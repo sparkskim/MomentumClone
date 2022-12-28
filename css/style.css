@@ -38,15 +38,14 @@
     box-sizing: border-box;
 }
 
-body, nav {
-    margin: 0;
-    font-family: 'Open Sans';
-    cursor: default;
-}
-
 body {
     background-image: url("https://images.unsplash.com/photo-1473800447596-01729482b8eb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=40eba4c15ec393c84db9c76380d26869");
     background-size: cover;
+}
+
+body, input, nav, #todo-form, #todo-list, #quote {
+    font-family: "Gill Sans", sans-serif;
+    color: (--color-black);
 }
 
 #container {
@@ -58,17 +57,18 @@ body {
 input {
     width: 50%;
     height: 25px;
-    font-size: (--font-large);
-    color: (--color-black);
+    font-size: var(--font-medium);
+    color: var(--color-black);
     border: none;
-    border-bottom: 2px solid (--color-black);
+    border-bottom: 2px solid var(--color-black);
     background-color: transparent;
+    text-align: center;
 }
 
 input:focus{
     outline: none;
     border: none;
-    border-bottom: 2px solid (--color-black);
+    border-bottom: 2px solid var(--color-black);
 }
 
 ul {
@@ -87,7 +87,7 @@ span {
 }
 
 .remove:hover {
-    border: 2px solid white;
+    border: 2px solid var(--color-white);
     border-radius: 20px;
     display: inline-block;
     padding: auto;
@@ -104,7 +104,6 @@ button {
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
-    color: var(--color-dark-grey);
     margin: 16px 0;
 }
 
@@ -121,8 +120,10 @@ h1 {
 }
 
 #weather {
-    display: inline-block;
-    flex: 3 3;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: var(--font-medium);
+    text-align: right;
 }
 
 .hidden {
