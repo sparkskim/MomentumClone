@@ -1,0 +1,131 @@
+:root {
+    /*color*/
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dart-white: #bdbdbd;
+    --color-orange: #e65100;
+    --color-dark-orange: #ac1900;
+    --color-black: #000000;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-light-orange: #ff833a;
+    --color-light-yellow: #ffffb1; 
+    --color-lemon: #FAFA33;
+    ;
+
+    /*Font size*/
+    --font-large: 58px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+    
+    /*Font weight*/
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /*Size*/
+    --size-border-radius: 4px;
+
+/*Animation*/
+    --animation-duration: 300ms;
+}
+
+/*Universal tags*/
+* {
+    box-sizing: border-box;
+}
+
+body, nav {
+    margin: 0;
+    font-family: 'Open Sans';
+    cursor: default;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1473800447596-01729482b8eb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=40eba4c15ec393c84db9c76380d26869");
+    background-size: cover;
+}
+
+#container {
+    width: 70%;
+    margin: 20% auto;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    height: 25px;
+    font-size: (--font-large);
+    color: (--color-black);
+    border: none;
+    border-bottom: 2px solid (--color-black);
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid (--color-black);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 0 px; 
+}
+
+span {
+    text-align: center;
+}
+
+.remove {
+    margin-left: 10px;
+}
+
+.remove:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    padding: auto;
+    cursor: pointer;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/*Typography*/
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-dark-grey);
+    margin: 16px 0;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    padding: 8px;
+    transition: all var(--animation-duration) ease-in-out;
+    z-index: 1;
+}
+
+#weather {
+    display: inline-block;
+    flex: 3 3;
+}
+
+.hidden {
+    display: none;
+}
+
