@@ -1,6 +1,6 @@
 const imageWidth = 1920;
 const imageHeight = 1080;
-const collectionID = 9312634;
+const collectionID = 93529030;
 
 fetch(`https://source.unsplash.com/collection/${collectionID}/${imageWidth}x${imageHeight}/`)
     .then(response => {
