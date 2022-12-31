@@ -1,6 +1,6 @@
 # Momentum Clone Coding
 
-This is my first front-end project via https://nomadcoders.co (https://github.com/nomadcoders).\
+This is my first front-end project via https://nomadcoders.co (https://github.com/nomadcoders). \
 I hope to make improvements as I learn more about front-end development.
 
 ### Extra tools I used 
