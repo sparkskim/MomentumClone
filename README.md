@@ -17,5 +17,5 @@ I spend about 1 day finishing the course and 1 hour everyday for a week finishin
 🔹Provide options for miliatry time and standard time
 
 ### Project page
-
+https://sparkskim.github.io/momentum_clone/
 
