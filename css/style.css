@@ -81,7 +81,8 @@ li {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
+    padding-left: 320px;
 }
 
 span {
@@ -123,6 +124,7 @@ h1 {
     font-size: var(--font-micro);
     text-align: right;
     padding-right: 20px;
+    color: var(--color-light-white);
 }
 
 #clock {
@@ -151,7 +153,7 @@ h1 {
 #todo-list {
     margin-top: 50px;
     font-size: var(--font-regular);
-    color: var(--color-orange);
+    color: var(--color-white);
 
 }
 
