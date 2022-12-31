@@ -154,7 +154,7 @@ h1 {
     margin-top: 50px;
     font-size: var(--font-regular);
     color: var(--color-white);
-
+    padding-left: 320px;
 }
 
 #quote {
