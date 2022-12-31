@@ -3,7 +3,7 @@
 This is my first front-end project via https://nomadcoders.co (https://github.com/nomadcoders)
 I hope to make improvements as I learn more about front-end development.
 
-### Tools I used 
+### Extra tools I used 
 🔹Canva\
 🔹Unsplash\
 🔹Codepen
